@@ -13,3 +13,4 @@ function love.draw()
 	love.graphics.setColor(255, 255, 255)
 	love.graphics.circle("fill", object.x, object.y, object.r, 16)
 end
+#BABABA
