@@ -10,7 +10,7 @@ function love.load()
 	snow:setLinearAcceleration(-10, -5, 10, 15)
 end
 function love.update(dt)
-	snow:update(dt)
+	snow:update(math.min(dt, 1/20))
 end
 function love.draw()
 	love.graphics.draw(snow, 400, -32)
